@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <h1 style="text-align: center;">College withdrawal form</h1>
+       <h6 style="text-align: center;">please fill out this form to request a withdrawal from college</h6>
+   <table >
+        <form>
+            <tr>
+                <td><label for="name">name*</label></td>
+                <td><input type="text" id="name" required placeholder="enter your name"></td>
+            </tr>
+            <tr>
+                <td><label for="student id">student id*</label></td>
+               <td> <input type="number" id="student id" required placeholder="enter student id"></td>
+            </tr>
+               <tr>
+                <td><label for="phone number">phone number</label></td>
+                <td><input type="phone number" id="phone number" placeholder="enter your phone number"></td>
+               </tr>
+               <tr>
+                <td><label for="e-mail address">e-mail address</label></td>
+                <td><input type="email" id="e-mail address" placeholder="enter your e-mail"></td>
+               </tr>
+               <tr>
+               </table>
+              <h2>withdrawal details</h2>
+              <table>
+                <tr>
+                    <td><label for="semester/quarter">semester/quarter*</label></td>
+                    <td><input type="text"  required id="semester/quarter" ></td>
+                </tr>
+                <tr>
+                    <td><label for="year">year</label></td>
+                    <td><input type="number" id="year" placeholder="e.g.,2024" min="2017" max="2024"></td>
+                </tr>
+                <tr>
+                    <td><label for="department">department</label></td>
+                     <td><select name="department" id="department">
+                        <option value="bsc">bsc</option>
+                        <option value="bba">bba</option>
+                        <option value="bcom">bcom</option>
+                        <option value="bca">bca</option></select>
+                    </td>
+                </tr>
+                <tr>
+                     <td>reason for withdrawal</td>
+                     <td><textarea name="text" id="reason for withdrawal"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="date of leaving">date of leaving*</label></td>
+                    <td><input type="date" required id="date of leaving"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" style="background-color: rgb(21, 99, 21); color: azure;"></td>
+                    <td><input type="reset" style="background-color: rgb(17, 17, 31); color: azure;"></td>
+                </tr>
+         </table>
+        </form>
+    
+</body>
+</html>
