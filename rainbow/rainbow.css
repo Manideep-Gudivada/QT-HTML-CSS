@@ -1,0 +1,62 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .rainbow {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: white;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .color {
+    position: absolute;
+    width: 100%;
+    height: 14.28%;
+  }
+  
+  .red {
+    top: 0;
+    background: red;
+  }
+  
+  .orange {
+    top: 14.28%;
+    background: orange;
+  }
+  
+  .yellow {
+    top: 28.56%;
+    background: yellow;
+  }
+  
+  .green {
+    top: 42.84%;
+    background: green;
+  }
+  
+  .blue {
+    top: 57.12%;
+    background: blue;
+  }
+  
+  .indigo {
+    top: 71.4%;
+    background: indigo;
+  }
+  
+  .violet {
+    top: 85.68%;
+    background: violet;
+  }
+  
