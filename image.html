@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Images with Shadow and Text</title>
+  <style>
+    /* General styling for the body */
+   
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      padding: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f3f3f3;
+    }
+
+    /* Container for the images */
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    /* Styling for each image card */
+    .image-card {
+      position: relative;
+      width: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    /* On hover effect */
+    .image-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Styling for the image */
+    .image-card img {
+      width: 100%;
+      display: block;
+    }
+
+    /* Overlay text container */
+    .image-card .overlay {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Container for the image cards -->
+  <div class="image-container">
+    <div class="image-card">
+      <img src="https://th.bing.com/th/id/OIP._X2-E6bpr349bM6sLu3rRAHaKP?w=208&h=289&c=7&r=0&o=5&pid=1.7" alt="Image 1">
+      <div class="overlay">Allu Arjun</div>
+    </div>
+    <div class="image-card">
+      <img src="https://th.bing.com/th/id/OIP.4sryxxwzbEpvOdHRJ9odlgHaLG?w=204&h=306&c=7&r=0&o=5&pid=1.7" alt="Image 2">
+      <div class="overlay">Ram Charan</div>
+    </div>
+    <div class="image-card">
+      <img src="https://th.bing.com/th?id=OIP.5415_dFE83pbVak9GhnUVgHaLq&w=199&h=313&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Image 3">
+      <div class="overlay">NTR</div>
+    </div>
+    <div class="image-card">
+      <img src="https://th.bing.com/th/id/OIP.i0phQdwdhsaCgN1mZ514MAAAAA?w=208&h=332&c=7&r=0&o=5&pid=1.7" alt="Image 4">
+      <div class="overlay">Vishwak Sen</div>
+    </div>
+  </div>
+</body>
+</html>
